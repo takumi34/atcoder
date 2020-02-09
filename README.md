@@ -1,5 +1,7 @@
 # AtCoder Beginner Contest
 
+## Tips
+
 * テンプレート
 
 ```cpp
