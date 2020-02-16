@@ -28,6 +28,7 @@ cin >> n >> m;
 
 * 入力例２
 ```cpp
+int n;
 vector<int> v(n);
 rep(i, n) { cin >> v[i]; }
 ```
