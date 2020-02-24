@@ -33,6 +33,12 @@ vector<int> v(n);
 rep(i, n) { cin >> v[i]; }
 ```
 
+* 入力例3
+```cpp
+vector<int> v(m);
+rep(i, m) { cin >> v[i]; }
+```
+
 * 出力例１
 ```cpp
 cout << n << m << endl;
