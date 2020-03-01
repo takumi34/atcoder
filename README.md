@@ -14,9 +14,11 @@ using namespace std;
 #define all(x) (x).begin(), (x).end()
 
 typedef long long int ll;
+typedef pair<int, int> P;
 
 int main() {
 
+return 0;
 }
 ```
 
