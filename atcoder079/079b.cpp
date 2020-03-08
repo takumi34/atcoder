@@ -24,12 +24,7 @@ int main() {
   ll n;
   cin >> n;
   vector<ll> memo(n + 1, -1);
-  rep(i, n + 1) {
-    if (i == n) {
-      cout << lucas(i, memo) << endl;
-    }
-    lucas(i, memo);
-  }
+  cout << lucas(n, memo) << endl;
 
   return 0;
 }
