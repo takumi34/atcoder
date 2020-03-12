@@ -16,6 +16,9 @@ using namespace std;
 typedef long long int ll;
 typedef pair<int, int> P;
 
+const long long INF = 3e18 + 12;
+const int inf = 1e9
+
 int main() {
 
 return 0;
