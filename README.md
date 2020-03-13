@@ -1,4 +1,4 @@
-# AtCoder Beginner Contest
+# AtCoder
 
 ## Tips
 
