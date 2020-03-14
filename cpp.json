@@ -22,7 +22,9 @@
 	 	],
 	 	"description": "kyopro_template"
 	 },
-	"basic cout": {
+
+
+"basic cout": {
 		"prefix": "print",
 		"body": [
 			"cout << ${1:/* code */} << endl;"
@@ -34,6 +36,7 @@
 		"body": [
 			"vector<int> v(n);",
 			"rep(i, n) { cin >> v[i]; }"
-		]
+		],
+		"description": "vector_input"
 	}
 }
