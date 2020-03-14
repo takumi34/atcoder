@@ -22,9 +22,7 @@
 	 	],
 	 	"description": "kyopro_template"
 	 },
-
-
-"basic cout": {
+	"basic cout": {
 		"prefix": "print",
 		"body": [
 			"cout << ${1:/* code */} << endl;"
