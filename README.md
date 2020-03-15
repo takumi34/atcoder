@@ -1,4 +1,9 @@
 # AtCoder
+## contests
+* abc = AtCoder Beginner Contest
+* agc = AtCoder Grand Contest
+* arc = AtCoder Regular Contest
+
 
 ## Tips
 
