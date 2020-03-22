@@ -11,9 +11,9 @@ typedef pair<int, int> P;
 const long long INF = 3e18 + 12;
 const int inf = 1e9;
 
-int calcNumOfCombination(int n, int r) {
+int cal(int n) {
   int num = 1;
-  for (int i = 1; i <= r; i++) {
+  for (int i = 1; i <= 2; i++) {
     num = num * (n - i + 1) / i;
   }
   return num;
@@ -24,11 +24,11 @@ int main() {
 
   int c = 0;
   if (a >= 2 && b >= 2) {
-    c = calcNumOfCombination(a, 2) + calcNumOfCombination(b, 2);
+    c = cal(a) + cal(b);
   } else if (a >= 2 && b < 2) {
-    c = calcNumOfCombination(a, 2);
+    c = cal(a);
   } else if (a < 2 && b >= 2) {
-    c = calcNumOfCombination(b, 2);
+    c = cal(b);
   }
   cout << c << endl;
 
