@@ -59,3 +59,14 @@ cout << n << m << endl;
 ```cpp
 printf("%.10f\n", a);
 ```
+
+* nCrの求め方
+```cpp
+int combination(int n, int r) {
+  int num = 1;
+  for (int i = 1; i <= r; i++) {
+    num = num * (n - i + 1) / i;
+  }
+  return num;
+}
+```
