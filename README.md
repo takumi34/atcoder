@@ -81,3 +81,11 @@ v.erase(unique(all(v)), v.end());
 ```cpp
 sort(all(v), greater<int>());
 ```
+
+* 各桁の和
+```cpp
+int sumOfDigits(int n){
+   if(n < 10)  return n;
+   return sumOfDigits(n/10) + n%10;
+}
+```
