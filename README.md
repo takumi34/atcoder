@@ -75,5 +75,9 @@ int combination(int n, int r) {
 ```cpp
 sort(all(v));
 v.erase(unique(all(v)), v.end());
+```
 
-
+* 逆順にソート
+```cpp
+sort(all(v), greater<int>());
+```
