@@ -70,3 +70,10 @@ int combination(int n, int r) {
   return num;
 }
 ```
+
+* 配列の重複要素を削除する
+```cpp
+sort(all(v));
+v.erase(unique(all(v)), v.end());
+
+
