@@ -73,6 +73,14 @@ int combination(int n, int r) {
 }
 ```
 
+* 全て置き換え(boost)
+```cpp
+#include <boost/algorithm/string/replace.hpp>
+
+ string a = "aiuelaia";
+ boost::algorithm::replace_all(a, "a", "u");
+```
+
 * 配列の重複要素を削除する
 ```cpp
 sort(all(v));
