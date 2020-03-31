@@ -23,19 +23,9 @@ int main() {
   rep(i, n) {
     if (s[i] == 'o' || s[i] == 'k' || s[i] == 'u') {
       continue;
-    } else if (s[i] == 'c') {
-      if (i < n - 1) {
-        if (s[i + 1] == 'h') {
-          i++;
-          continue;
-        } else {
-          flag = false;
-          break;
-        }
-      } else {
-        flag = false;
-        break;
-      }
+    } else if (s[i] == 'c' && s[i + 1] == 'h') {
+      i++;
+      continue;
     } else {
       flag = false;
       break;
