@@ -98,9 +98,14 @@ sort(all(v));
 v.erase(unique(all(v)), v.end());
 ```
 
-* 逆順にソート
+* 降順にソート
 ```cpp
 sort(all(v), greater<int>());
+```
+* 反転させる
+```cpp
+string s = to_string(i);
+string r = string(s.rbegin(), s.rend());
 ```
 
 * 各桁の和
