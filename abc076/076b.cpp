@@ -21,18 +21,14 @@ int main() {
 
   int res = 1;
 
-  int ans = 1 + k * n;
-  vector<int> v(n);
-  rep(i, n + 1) {
-    res = res * pow(2, i);
-    res += k * (n - i);
-    debug(res);
-
-    ans = min(ans, res);
-
-    res = 1;
+  rep(i, n) {
+    if (res * 2 < res + k) {
+      res *= 2;
+    } else {
+      res += k;
+    }
   }
-  cout << ans << endl;
+  cout << res << endl;
 
   return 0;
 }
