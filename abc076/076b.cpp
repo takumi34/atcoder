@@ -22,11 +22,7 @@ int main() {
   int res = 1;
 
   rep(i, n) {
-    if (res * 2 < res + k) {
-      res *= 2;
-    } else {
-      res += k;
-    }
+    res = min(res * 2, res + k);
   }
   cout << res << endl;
 
