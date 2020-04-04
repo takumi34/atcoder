@@ -115,3 +115,14 @@ int sumOfDigits(int n){
    return sumOfDigits(n/10) + n%10;
 }
 ```
+
+* 素数判定
+```cpp
+bool isPrime(ll n) {
+   if (n == 1)return false;
+   for (int i = 2; i * i <= n; i++) {
+      if (n % i == 0)return false;
+   }
+   return true;
+}
+```
