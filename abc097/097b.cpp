@@ -30,24 +30,18 @@ int main() {
 
   int a;
   cin >> a;
-
-  vector<bool> v(a + 1);
-
-  v[1] = 1;
+  int ans = 1;
 
   repi(i, 2, a + 1) {
-    int b = i * i;
-    while (b <= a) {
-      v[b] = 1;
-      b *= i;
+    int p = i * i;
+    for (int j = 2;; j++) {
+      if (p > a) break;
+      ans = max(ans, p);
+      p *= i;
     }
   }
 
-  for (int i = a; i >= 1; i--)
-    if (v[i]) {
-      cout << i << endl;
-      return 0;
-    }
+  cout << ans << endl;
 
   return 0;
 }
