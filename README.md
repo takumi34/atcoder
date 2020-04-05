@@ -101,7 +101,7 @@ bool isPrime(ll n) {
 }
 ```
 
-* 約数列挙
+* 約数列挙(sortなし)
 ```cpp
 vector<ll> divisor(ll n) {
   vector<ll> divs;
