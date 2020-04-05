@@ -115,3 +115,23 @@ vector<ll> divisor(ll n) {
   return divs;
 }
 ```
+
+* ランレングス圧縮
+```cpp
+vector<pair<char, int>> runLength(string const& s) {
+  vector<pair<char, int>> ans;
+
+  int count = 1;
+  for (int i = 0; i < (int)s.size() - 1; i++) {
+    if (s[i] == s[i + 1]) {
+      count++;
+    } else {
+      ans.push_back(make_pair(s[i], count));
+      count = 1;
+    }
+  }
+  ans.push_back(make_pair(s.back(), count));
+
+  return ans;
+}
+```
