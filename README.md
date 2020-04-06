@@ -121,16 +121,16 @@ vector<ll> divisor(ll n) {
 vector<pair<char, int>> runLength(string const& s) {
   vector<pair<char, int>> ans;
 
-  int count = 1;
+  int num = 1;
   for (int i = 0; i < (int)s.size() - 1; i++) {
     if (s[i] == s[i + 1]) {
-      count++;
+      num++;
     } else {
-      ans.push_back(make_pair(s[i], count));
-      count = 1;
+      ans.push_back(make_pair(s[i], num));
+      num = 1;
     }
   }
-  ans.push_back(make_pair(s.back(), count));
+  ans.push_back(make_pair(s.back(), num));
 
   return ans;
 }
