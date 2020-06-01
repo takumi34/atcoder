@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <boost/algorithm/string/replace.hpp>
 using namespace std;
 
 #pragma GCC target("avx")
@@ -29,10 +30,15 @@ int main() {
   ios::sync_with_stdio(false);
   cin.tie(0);
 
-  long double a,b;
+  ll a;
+  string b;
   cin >> a >> b;
 
-  ll ans = ll(a*b);
+  boost::algorithm::replace_all(b, ".", "");
+
+  int c = atoi(b);
+
+  ll ans = ll(a * c)/100;
   cout << ans << endl;
 
   return 0;
