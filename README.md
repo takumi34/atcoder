@@ -36,6 +36,12 @@ cout << n << m << endl;
 printf("%.10f\n", a);
 ```
 
+* char型の数値をintに変換
+```cpp
+char c = '9';
+int i = c - '0';
+```
+
 * 最大公約数(gcd)、最小公倍数(lcm)
 ```cpp
 ll gcd(ll x, ll y) {
