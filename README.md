@@ -49,6 +49,32 @@ ll b = stoll(a);
 int c = stoi(a);
 ```
 
+* mapのforループと各要素へのアクセス
+```cpp
+// iterator
+for (auto i = mp.begin(); i != mp.end(); i++) {
+  ll a = i->first, b = i->second;
+  debug2(a, b);
+}
+
+// range based
+for (auto i : mp) {
+  ll a = i.first, b = i.second;
+  debug2(a, b);
+}
+```
+
+* 同じものが何個あるか数え上げ(mapのキーに対応する要素をインクリメント)
+```cpp
+int n;
+cin >> n;
+vector<int> v(n);
+rep(i, n) { cin >> v[i]; }
+
+map<int, int> cnt;
+rep(i, n){cnt[v[i]]++;} 
+```
+
 * 最大公約数(gcd)、最小公倍数(lcm)
 ```cpp
 ll gcd(ll x, ll y) {
