@@ -42,6 +42,13 @@ char c = '9';
 int i = c - '0';
 ```
 
+* string型をll, intに変換
+```cpp
+string a = "10";
+ll b = stoll(a);
+int c = stoi(a);
+```
+
 * 最大公約数(gcd)、最小公倍数(lcm)
 ```cpp
 ll gcd(ll x, ll y) {
